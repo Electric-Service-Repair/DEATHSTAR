@@ -1,0 +1,24 @@
+/home/user/
+├── .config/            # User-specific configuration files (XDG standard)
+├── .local/
+│   ├── bin/            # Personal scripts/binaries (add to $PATH)
+│   ├── share/          # Shared data (fonts, icons, themes)
+│   └── state/          # History files, logs, state data
+├── .cache/             # Non-essential data (can be deleted safely)
+├── .ssh/               # Keys and configs (permissions 700)
+├── dev/                # (or src/) The hub for all coding projects
+│   ├── work/           # Employer-specific repositories
+│   ├── personal/       # Your side projects and experiments
+│   ├── oss/            # Open source projects you clone/contribute to
+│   └── scratch/        # "Throwaway" code, quick tests, leetcode
+├── docs/               # (or Documents/) Organized knowledge base
+│   ├── finance/
+│   ├── notes/          # Obsidian/Notion markdown vaults
+│   └── manuals/        # PDF reference material
+├── media/              # Centralized heavy assets
+│   ├── images/
+│   ├── video/
+│   └── audio/
+├── dl/                 # (or Downloads/) Short-term staging area
+├── tmp/                # Explicit temporary workspace (auto-wipes on reboot?)
+└── backups/            # Local snapshots, dotfile archives
