@@ -1,0 +1,317 @@
+#!/bin/bash
+# ==============================================================================
+# DEATHSTAR - The Imperial CLI Suite
+# ==============================================================================
+# Main router script for the Death Star Command Line Interface.
+# Provides access to all Imperial subcommands.
+# ==============================================================================
+
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+COMMANDS_DIR="$SCRIPT_DIR/commands"
+ASSETS_DIR="$SCRIPT_DIR/assets/ascii"
+
+# Colors
+RED='\033[0;31m'
+BOLD_RED='\033[1;31m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+WHITE='\033[1;37m'
+NC='\033[0m' # No Color
+
+# Version
+VERSION="1.0.0"
+
+# Display the main Death Star banner
+show_banner() {
+    echo -e "${CYAN}"
+    echo "                          ..::::::::::.."
+    echo "                      .::'              \`::."
+    echo "                   .::'                    \`::."
+    echo "                 .::'                        \`::."
+    echo "               .::'                            \`::."
+    echo "              ::'                                \`::."
+    echo "            .::'                                    \`::."
+    echo "           .::'                                        \`::."
+    echo "          ::'                                              \`::."
+    echo "         ::'                                                  \`::."
+    echo "        ::'                                                      \`::."
+    echo "       ::'                                                          \`::."
+    echo "      ::'                                                              \`::."
+    echo "     ::'                                                                  \`::."
+    echo "    ::'                                                                      \`::."
+    echo "   ::'                                                                          \`::."
+    echo "  ::'                                                                              \`::."
+    echo " ::'                                                                                  \`::."
+    echo "::'                                                                                      \`::."
+    echo "::                                                                                        ::"
+    echo "::                                                                                        ::"
+    echo "::'                                                                                      \`::."
+    echo " ::'                                                                                  \`::."
+    echo "  ::'                                                                              \`::."
+    echo "   ::'                                                                          \`::."
+    echo "    ::'                                                                      \`::."
+    echo "     ::'                                                                  \`::."
+    echo "      ::'                                                              \`::."
+    echo "       ::'                                                          \`::."
+    echo "        ::'                                                      \`::."
+    echo "         ::'                                                  \`::."
+    echo "          ::'                                              \`::."
+    echo "           ::'                                          \`::."
+    echo "            \`::.                                      .::'"
+    echo "              \`::.                                  .::'"
+    echo "               \`::.                              .::'"
+    echo "                 \`::.                          .::'"
+    echo "                   \`::.                      .::'"
+    echo "                     \`:::.                .:::'"
+    echo "                        \`\`:::::::::::::::''"
+    echo -e "${NC}"
+    echo ""
+    echo -e "${RED}              ╔═══════════════════════════════════════════╗${NC}"
+    echo -e "${RED}              ║${NC}     ${BOLD_RED}THE DEATH STAR CLI${NC}     ${RED}║${NC}"
+    echo -e "${RED}              ║${NC}   ${YELLOW}Fully Armed and Operational${NC}   ${RED}║${NC}"
+    echo -e "${RED}              ╚═══════════════════════════════════════════╝${NC}"
+    echo ""
+}
+
+# Show main help
+show_help() {
+    show_banner
+    
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo -e "${WHITE}                    COMMAND OVERVIEW                     ${NC}"
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo ""
+    echo -e "${YELLOW}Usage:${NC} deathstar <command> [subcommand] [options]"
+    echo ""
+    echo -e "${WHITE}Available Commands:${NC}"
+    echo ""
+    echo -e "  ${RED}status${NC}                    Show Death Star ASCII + system health"
+    echo -e "  ${RED}launch${NC} <project>          Quick-start new project with template"
+    echo ""
+    echo -e "${WHITE}Imperial Subcommands:${NC}"
+    echo ""
+    echo -e "  ${BOLD_RED}vader${NC}                     Git enforcer (push, review)"
+    echo -e "  ${BOLD_RED}tarkin${NC}                    Deployment weapon (deploy, planet)"
+    echo -e "  ${GREEN}yoda${NC}                      Wise advisor (commit, wisdom)"
+    echo -e "  ${BLUE}r2d2${NC}                      System diagnostics (scan, beep)"
+    echo -e "  ${PURPLE}thrawn${NC}                    Analytics (repo)"
+    echo -e "  ${WHITE}lightsaber${NC}                  Glowing editor (edit)"
+    echo -e "  ${CYAN}hyperdrive${NC}                  Navigation (jump, coords)"
+    echo -e "  ${PURPLE}palpatine${NC}                  Prompt enhancer"
+    echo -e "  ${WHITE}stormtrooper${NC}                Fuzzy finder (find, aim)"
+    echo ""
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo -e "${YELLOW}Examples:${NC}"
+    echo ""
+    echo -e "  ${WHITE}deathstar status${NC}              # Show system status"
+    echo -e "  ${WHITE}deathstar vader push${NC}          # Force push with warnings"
+    echo -e "  ${WHITE}deathstar yoda wisdom${NC}         # Get developer wisdom"
+    echo -e "  ${WHITE}deathstar r2d2 scan${NC}           # Run system diagnostics"
+    echo -e "  ${WHITE}deathstar tarkin deploy main${NC}  # Deploy to main"
+    echo ""
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo -e "${CYAN}Type '${WHITE}deathstar <command> help${CYAN}' for command-specific help.${NC}"
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo ""
+}
+
+# Command: status
+cmd_status() {
+    if [ -f "$COMMANDS_DIR/status.sh" ]; then
+        bash "$COMMANDS_DIR/status.sh" "$@"
+    else
+        echo -e "${RED}Error: status command not found${NC}"
+        exit 1
+    fi
+}
+
+# Command: launch
+cmd_launch() {
+    local project_name="${1:-}"
+    
+    if [ -z "$project_name" ]; then
+        echo -e "${RED}DEATHSTAR: Project name required.${NC}"
+        echo -e "${YELLOW}Usage: deathstar launch <project-name>${NC}"
+        exit 1
+    fi
+    
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo -e "${BOLD_RED}              PROJECT LAUNCH SEQUENCE                ${NC}"
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo ""
+    echo -e "${CYAN}   Project Name: ${YELLOW}$project_name${NC}"
+    echo ""
+    
+    # Create project directory
+    echo -e "${CYAN}   [1/5] Creating project directory...${NC}"
+    mkdir -p "$project_name"
+    sleep 0.2
+    
+    # Create basic structure
+    echo -e "${CYAN}   [2/5] Setting up Imperial project structure...${NC}"
+    mkdir -p "$project_name/src"
+    mkdir -p "$project_name/tests"
+    mkdir -p "$project_name/docs"
+    mkdir -p "$project_name/assets"
+    sleep 0.2
+    
+    # Create README
+    echo -e "${CYAN}   [3/5] Creating project documentation...${NC}"
+    cat > "$project_name/README.md" << EOF
+# $project_name
+
+An Imperial Project built with the Death Star CLI.
+
+## Setup
+
+\`\`\`bash
+# Initialize your project
+git init
+\`\`\`
+
+## Structure
+
+- \`src/\` - Source code
+- \`tests/\` - Test files
+- \`docs/\` - Documentation
+- \`assets/\` - Assets and resources
+
+## Commands
+
+Use the Death Star CLI for project management:
+
+\`\`\`bash
+deathstar vader review    # Code review
+deathstar yoda commit     # Generate commit messages
+deathstar r2d2 scan       # System diagnostics
+\`\`\`
+
+---
+*Built with the Death Star CLI Suite*
+EOF
+    sleep 0.2
+    
+    # Create .gitignore
+    echo -e "${CYAN}   [4/5] Creating .gitignore...${NC}"
+    cat > "$project_name/.gitignore" << EOF
+# Dependencies
+node_modules/
+vendor/
+__pycache__/
+
+# Build outputs
+dist/
+build/
+*.o
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+EOF
+    sleep 0.2
+    
+    # Initialize git
+    echo -e "${CYAN}   [5/5] Initializing Git repository (IVCS)...${NC}"
+    cd "$project_name"
+    git init -q 2>/dev/null
+    git add . 2>/dev/null
+    git commit -q -m "Initial commit - Imperial Project Setup" 2>/dev/null
+    cd ..
+    sleep 0.3
+    
+    echo ""
+    echo -e "${GREEN}   ✓ Project '$project_name' created successfully!${NC}"
+    echo ""
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo -e "${WHITE}   Project Structure:${NC}"
+    echo ""
+    echo -e "   ${YELLOW}$project_name/${NC}/"
+    echo -e "   ├── ${CYAN}src/${NC}/          # Source code"
+    echo -e "   ├── ${CYAN}tests/${NC}/        # Test files"
+    echo -e "   ├── ${CYAN}docs/${NC}/         # Documentation"
+    echo -e "   ├── ${CYAN}assets/${NC}/       # Assets"
+    echo -e "   ├── ${GREEN}README.md${NC}"
+    echo -e "   └── ${GREEN}.gitignore${NC}"
+    echo ""
+    echo -e "${WHITE}   Next steps:${NC}"
+    echo -e "   ${CYAN}cd $project_name${NC}"
+    echo -e "   ${CYAN}deathstar vader review${NC}"
+    echo ""
+    echo -e "${RED}   \"Fear will keep the users in line.\" - Grand Moff Tarkin${NC}"
+    echo -e "${CYAN}═══════════════════════════════════════════════════════════${NC}"
+    echo ""
+}
+
+# Route to subcommand
+route_to_command() {
+    local cmd="$1"
+    shift
+    
+    local cmd_file="$COMMANDS_DIR/${cmd}.sh"
+    
+    if [ -f "$cmd_file" ]; then
+        bash "$cmd_file" "$@"
+    else
+        echo -e "${RED}DEATHSTAR: Unknown command '$cmd'${NC}"
+        echo -e "${YELLOW}Type 'deathstar help' for available commands.${NC}"
+        exit 1
+    fi
+}
+
+# Main entry point
+main() {
+    local command="${1:-help}"
+    shift 2>/dev/null || true
+    
+    case "$command" in
+        # Main commands
+        status)
+            cmd_status "$@"
+            ;;
+        launch)
+            cmd_launch "$@"
+            ;;
+        
+        # Subcommand routing
+        vader|tarkin|yoda|r2d2|thrawn|lightsaber|hyperdrive|palpatine|stormtrooper)
+            route_to_command "$command" "$@"
+            ;;
+        
+        # Help and version
+        help|--help|-h)
+            show_help
+            ;;
+        version|--version|-v)
+            echo -e "${RED}Death Star CLI${NC} version ${YELLOW}$VERSION${NC}"
+            echo -e "${CYAN}Fully Armed and Operational${NC}"
+            ;;
+        
+        # Unknown command
+        *)
+            echo -e "${RED}DEATHSTAR: Unknown command '$command'${NC}"
+            echo ""
+            show_help
+            exit 1
+            ;;
+    esac
+}
+
+# Run main
+main "$@"
