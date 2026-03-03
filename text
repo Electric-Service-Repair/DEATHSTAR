@@ -1,0 +1,54 @@
+BLUE HAT (Process Control)
+ * Objective: To define and provide structured templates for the Six Thinking Hats framework to streamline your workflow.
+ * Approach: I will identify the essential components needed for a template (White), consider the user experience of using them (Red), address potential rigidness or over-complication (Black), highlight the efficiency gains (Yellow), and suggest creative formats like markdown or CSV (Green).
+ * Process Note: This request is a logical progression from our initiation, aimed at creating reusable assets for your knowledge base.
+WHITE HAT (Facts & Information)
+ * Components: A standard template requires the 6 specific hat headings, a "Blue Hat" opening, and an "Integrated Response" closing.
+ * Data Formats: Templates can be delivered as Plain Text, Markdown (for Notion/Obsidian), or structured Tables.
+ * Current Context: You are currently using me, an AI, to generate these, but you may also need "blank" versions for manual meetings.
+RED HAT (Emotions & Intuition)
+ * Feeling: I feel a sense of professional clarity; templates provide a "safety net" that reduces the anxiety of starting a complex analysis from scratch.
+ * Intuition: My gut says that if the templates look too "corporate," they might stifle the very creativity they are meant to foster. They should feel like tools, not chores.
+BLACK HAT (Critical Judgment)
+ * Risks: Templates can lead to "fill-in-the-blank" thinking where users provide shallow answers just to finish the form.
+ * Weaknesses: A static template doesn't account for the varying importance of each hat depending on the specific problem.
+ * Danger: Over-reliance on a single format might make the thinking process feel repetitive and stale over time.
+YELLOW HAT (Optimism & Benefits)
+ * Value: Templates ensure consistency across different projects and team members.
+ * Benefits: They save significant time by removing the need to re-format every session.
+ * Positives: Having a "Black Hat" section explicitly included makes it socially "safe" to be critical in a group setting without appearing negative.
+GREEN HAT (Creativity & Alternatives)
+ * Idea 1 (The "Quick-Fire" Template): A 1-sentence-per-hat format for rapid 5-minute decisions.
+ * Idea 2 (The "Visual" Template): A 2x3 grid table for side-by-side comparison of perspectives.
+ * Idea 3 (The "Prompt-Based" Template): Instead of headings, use specific questions (e.g., "What is the scariest part of this?" for Red Hat).
+ * Idea 4 (The "Digital Export"): A CSV format that can be imported into project management tools like Trello or Monday.com as sub-tasks.
+INTEGRATED RESPONSE
+To maximize your workflow, I recommend using a Markdown-based template because it is compatible with almost all modern knowledge-base tools (Notion, Obsidian, Roam).
+Suggested Blank Template:
+# 🎩 Six Hats Session: [Topic Name]
+**Date:** [Date] | **Goal:** [What are we deciding?]
+
+---
+## 🟦 BLUE HAT (The Conductor)
+*Objective & Agenda:*
+
+## ⬜ WHITE HAT (The Scientist)
+*Facts, Figures, & Missing Data:*
+
+## 🟥 RED HAT (The Heart)
+*Feelings, Hunches, & Gut Reactions:*
+
+## ⬛ BLACK HAT (The Judge)
+*Risks, Flaws, & Potential Failures:*
+
+## 🟨 YELLOW HAT (The Optimist)
+*Benefits, Value, & Logical Positives:*
+
+## 🟩 GREEN HAT (The Architect)
+*Creative Ideas & Alternative Paths:*
+
+---
+## 🏁 INTEGRATED RESPONSE
+*Final Synthesis & Next Steps:*
+
+Would you like me to generate a specific "Quick-Fire" version for your calendar events, or perhaps a table-based version for comparative analysis?
