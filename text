@@ -52,3 +52,88 @@ Suggested Blank Template:
 *Final Synthesis & Next Steps:*
 
 Would you like me to generate a specific "Quick-Fire" version for your calendar events, or perhaps a table-based version for comparative analysis?
+
+
+##
+
+BLUE HAT (Process Control)
+ * Objective: To provide a comprehensive suite of Six Thinking Hats templates optimized for different use cases (Quick, Collaborative, and Technical).
+ * Approach: I will detail the specific data structures (White), gauge the "feel" of each format (Red), identify where a template might fail to capture nuance (Black), showcase the efficiency of having a "toolkit" (Yellow), and propose unconventional formats like a "Hat Prompt Matrix" (Green).
+ * Process Note: This session is about expanding your "Knowledge Base" with practical, copy-pasteable assets.
+WHITE HAT (Facts & Information)
+ * Template Types: There are three primary formats requested: Markdown (standard), Table (comparative), and Prompt-based (facilitation).
+ * Data Requirements: Each requires the six core categories plus a synthesis section.
+ * Availability: These can be stored in Notion, Obsidian, Google Docs, or as physical printouts for workshops.
+RED HAT (Emotions & Intuition)
+ * Feeling: I feel a sense of structured empowerment; having these tools ready makes the "blank page" problem disappear.
+ * Intuition: My gut says the "Quick-Fire" version will be your most used tool because it lowers the barrier to entry for daily decisions.
+ * Emotional Tone: Helpful, organized, and ready for action.
+BLACK HAT (Critical Judgment)
+ * Risks: If the templates are too long, you might stop using them during busy periods.
+ * Weaknesses: Templates can become "check-box exercises" where the quality of thought is sacrificed for the speed of completion.
+ * Dangers: Using a table for complex emotional (Red Hat) data can sometimes feel clinical and dismissive of the actual feelings involved.
+YELLOW HAT (Optimism & Benefits)
+ * Value: These templates provide a "cognitive scaffold" that supports higher-level thinking without the mental overhead of formatting.
+ * Benefits: It allows for "Async Thinking"—you can fill out a hat, step away, and return later without losing the thread.
+ * Positives: The visual separation of the Black and Yellow hats prevents "argumentative loops" in your own head.
+GREEN HAT (Creativity & Alternatives)
+ * Idea 1 (The "Emoji-Only" Template): 🟦 ⬜ 🟥 ⬛ 🟨 🟩 — A ultra-minimalist mobile-friendly version for texting or quick notes.
+ * Idea 2 (The "Interview" Template): A series of six specific questions you "ask" yourself to trigger each mindset.
+ * Idea 3 (The "Conflict Resolver"): A template specifically for two opposing ideas, putting them both through the hats side-by-side.
+INTEGRATED RESPONSE
+Here are three distinct templates to add to your workflow. I recommend pinning these to your notes app for immediate access.
+1. The "Deep Dive" (Markdown Format)
+Best for complex projects, strategy, or high-stakes decisions.
+# 🎩 SIX HATS ANALYSIS: [Project Name]
+**Session Lead:** [Name] | **Date:** 2026-03-02
+
+---
+### 🟦 BLUE HAT: Strategy & Objectives
+- What is the specific goal of this thinking session?
+- What is the time limit for each hat?
+
+### ⬜ WHITE HAT: Data & Knowns
+- [Fact 1]
+- [Fact 2]
+- *Missing Info:* [What don't we know?]
+
+### 🟥 RED HAT: Intuition & Gut
+- [Feeling 1 - e.g., "Excitement"]
+- [Feeling 2 - e.g., "Underlying dread about the deadline"]
+
+### ⬛ BLACK HAT: Risks & Faults
+- [Critical Flaw 1]
+- [Worst Case Scenario]
+
+### 🟨 YELLOW HAT: Value & Benefits
+- [Best Case Scenario]
+- [Unexpected Positive Outcomes]
+
+### 🟩 GREEN HAT: Creative Alternatives
+- [Idea 1]
+- [Idea 2]
+
+---
+## 🏁 SYNTHESIS & ACTION ITEMS
+1. [Action]
+2. [Action]
+
+2. The "Quick-Fire" (Table Format)
+Best for comparing two options or for a fast 5-minute scan.
+| Hat | Perspective | Notes/Insights |
+|---|---|---|
+| 🟦 | Process | Objective: Decide on [X] |
+| ⬜ | Facts | Budget is $500; Deadline is Friday. |
+| 🟥 | Feelings | I'm nervous but intrigued. |
+| ⬛ | Risks | Might be a waste of time/money. |
+| 🟨 | Values | High potential for learning. |
+| 🟩 | Ideas | Could we outsource it? Or automate? |
+3. The "Facilitator" (Prompt Questions)
+Use these when you are stuck and need to "trigger" the mindset.
+ * Blue: "How should we organize this conversation?"
+ * White: "What does the hard evidence tell us?"
+ * Red: "Without justifying it, how do I feel right now?"
+ * Black: "If this fails, why will it have happened?"
+ * Yellow: "What is the 'golden opportunity' hidden here?"
+ * Green: "If I had a magic wand, what would I change?"
+Would you like me to create a specific "Daily Review" template based on these to help you audit your calendar at the end of each day?
