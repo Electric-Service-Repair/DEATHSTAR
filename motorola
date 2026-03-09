@@ -1,0 +1,21 @@
+STEPS TO RESEARCH:
+1. Enable Developer Options (tap Build Number 7x)
+2. Enable OEM Unlocking in Developer Options
+3. Get unlock key from Motorola:
+   - adb reboot bootloader
+   - fastboot oem get_unlock_data
+   - Submit to https://motorola.com/unlocking-bootloader
+4. Receive unlock key via email
+5. fastboot oem unlock <KEY>
+6. UNDERSTAND: This WIPES the device
+7. UNDERSTAND: This may void warranty
+8. Research if Android 16 dev preview affects unlock
+
+TERMUX PREP:
+pkg install android-tools
+adb devices
+fastboot devices
+
+NOTE: Only proceed on YOUR owned device. Educational purposes.
+
+##
