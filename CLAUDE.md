@@ -29,6 +29,11 @@ DEATHSTAR/
 │   ├── palpatine.sh             # Prompt enhancer / AI templates
 │   ├── stormtrooper.sh          # Fuzzy file finder (find, aim)
 │   └── status.sh                # System status + Death Star ASCII
+├── docs/                        # Documentation and logs
+│   ├── agents.md                # Character roster and agent guide
+│   ├── index.html               # Main documentation portal
+│   ├── legacy/                  # Archived architecture docs
+│   └── logs/                    # Repository audit logs
 ├── assets/
 │   └── ascii/                   # ASCII art files (.txt)
 │       ├── deathstar.txt
@@ -208,6 +213,7 @@ See `CLOUD_ARCHITECTURE.md` for multi-cloud setup and `HEADLESS_MODE.md` for CI/
 | `README.md` | Full user-facing docs; keep in sync with any command changes |
 | `CLOUD_ARCHITECTURE.md` | Cloud/AI integration architecture |
 | `HEADLESS_MODE.md` | How to use in non-interactive/CI contexts |
+| `docs/agents.md` | Character roster and role descriptions |
 | `install-pro.sh` | Gemini Pro installer; modifies system PATH |
 
 ---

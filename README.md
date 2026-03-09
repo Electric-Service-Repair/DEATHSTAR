@@ -96,7 +96,7 @@ DEATHSTAR/
 ├── deathstar              # Main executable router
 ├── commands/              # Character-themed subcommands
 ├── assets/                # ASCII art and static resources
-├── docs/                  # Documentation and logs
+├── docs/                  # Documentation, logs, and agent guide
 ├── bash/                  # Alias arsenals
 ├── LICENSE                # MIT License
 └── README.md              # This file
