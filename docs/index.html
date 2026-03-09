@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEATHSTAR CLI | Fully Operational</title>
+    <style>
+        :root {
+            --imperial-red: #ff0000;
+            --imperial-grey: #2a2a2a;
+            --imperial-black: #0a0a0a;
+            --imperial-white: #e0e0e0;
+            --vader-glow: rgba(255, 0, 0, 0.4);
+        }
+
+        body {
+            background-color: var(--imperial-black);
+            color: var(--imperial-white);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(white, rgba(255,255,255,0) 2px) 0 0,
+                        radial-gradient(white, rgba(255,255,255,0) 2px) 10px 10px,
+                        radial-gradient(white, rgba(255,255,255,0) 1px) 15px 15px;
+            background-size: 100px 100px, 150px 150px, 200px 200px;
+            opacity: 0.3;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            width: 100%;
+            border-bottom: 2px solid var(--imperial-grey);
+            background: linear-gradient(to bottom, #000, #0a0a0a);
+        }
+
+        .ascii-art {
+            color: var(--imperial-red);
+            font-size: 10px;
+            line-height: 1.2;
+            white-space: pre;
+            text-shadow: 0 0 10px var(--vader-glow);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 10px;
+            margin: 0;
+            color: var(--imperial-white);
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--imperial-red);
+            margin-top: 10px;
+            letter-spacing: 3px;
+        }
+
+        main {
+            max-width: 900px;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            border-left: 5px solid var(--imperial-red);
+            padding-left: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background-color: var(--imperial-grey);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px var(--vader-glow);
+            border-color: var(--imperial-red);
+        }
+
+        .feature-card h3 {
+            color: var(--imperial-red);
+            margin-top: 0;
+        }
+
+        .terminal {
+            background-color: #000;
+            border: 1px solid var(--imperial-grey);
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: inset 0 0 20px rgba(0,255,0,0.05);
+            position: relative;
+        }
+
+        .terminal::before {
+            content: "• • •";
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            color: #333;
+            font-size: 12px;
+        }
+
+        code {
+            color: #00ff00;
+        }
+
+        .prompt {
+            color: var(--imperial-red);
+            margin-right: 10px;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid var(--imperial-grey);
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--imperial-red);
+            border: 2px solid var(--imperial-red);
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--imperial-red);
+            color: white;
+            box-shadow: 0 0 20px var(--vader-glow);
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+
+    <header>
+        <div class="ascii-art">
+                          ..::::::::::..
+                      .::'              `::.
+                   .::'                    `::.
+                 .::'                        `::.
+               .::'                            `::.
+              ::'                                `::.
+            .::'                                    `::.
+           .::'                                        `::.
+          ::'                                              `::.
+         ::'                                                  `::.
+        ::'                                                      `::.
+       ::'                                                          `::.
+      ::'                                                              `::.
+     ::'                                                                  `::.
+    ::'                                                                      `::.
+   ::'                                                                          `::.
+  ::'                                                                              `::.
+ ::'                                                                                  `::.
+::'                                                                                      `::.
+::                                                                                        ::
+::                                                                                        ::
+        </div>
+        <h1>DEATHSTAR CLI</h1>
+        <div class="subtitle">Fully Armed and Operational Developer Toolkit</div>
+        <a href="https://github.com/Electric-Service-Repair/DEATHSTAR" class="cta-button">Access the Archives</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>Bring the power of the Empire (and the wisdom of the Jedi) to your development workflow. DEATHSTAR CLI is a comprehensive suite of Bash-powered tools designed to automate your galaxy, from git enforcement to system diagnostics.</p>
+        </section>
+
+        <section>
+            <h2>Imperial Components</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>⚔️ Lord Vader</h3>
+                    <p>The Git Enforcer. Ensures code quality and punishes lack of commits.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🧙 Master Yoda</h3>
+                    <p>The Wise Advisor. Provides commit message wisdom and refactoring tips.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🤖 R2-D2</h3>
+                    <p>Diagnostics Droid. Performs system health checks with authentic beeps.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Grand Admiral Thrawn</h3>
+                    <p>Tactical Analytics. Analyzes repository health with surgical precision.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚀 Hyperdrive</h3>
+                    <p>Neural Navigation. Jump between project directories with hyperspace effects.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👑 Palpatine</h3>
+                    <p>The AI Overlord. Enhances your prompts with unlimited power.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Deployment Command</h2>
+            <div class="terminal">
+                <p><span class="prompt">user@deathstar:~$</span> <code>./deathstar status</code></p>
+                <p><span class="prompt">user@deathstar:~$</span> <code>./deathstar vader review</code></p>
+                <p><span class="prompt">user@deathstar:~$</span> <code>./deathstar yoda wisdom</code></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Death Star CLI v1.1.0 | MIT License</p>
+        <p>"The Force will be with you. Always."</p>
+    </footer>
+</body>
+</html>
