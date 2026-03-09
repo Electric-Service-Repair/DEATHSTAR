@@ -1,0 +1,391 @@
+bash/deathstar-aliases.sh:# DEATH STAR – Project Core
+bash/deathstar-aliases.sh:## Status
+bash/deathstar-aliases.sh:## Key Files & Dirs
+bash/deathstar-aliases.sh:  echo "# STATUS UPDATE – $(date -u)" > status-r2-$(date +%s).md; \
+bash/deathstar-aliases.sh:  echo "# ESCALATION PHASE – Master Turbo Command" > escalation-plan.md; \
+bash/Imperial_git_aliases.sh:## bash script
+bash/Imperial_git_aliases.sh:# Imperial Git Aliases
+bash/Imperial_git_aliases.sh:    # "git rebellion" - Fetch all and prune dead branches (Crush the resistance)
+bash/Imperial_git_aliases.sh:    # "git ignite" - Push to current branch (Fire when ready)
+bash/Imperial_git_aliases.sh:    # "git clone-trooper" - Create a new branch from operational
+bash/Imperial_git_aliases.sh:    # "git blame-admiral" - Find out who wrote this failing code
+docs/legacy/README.md:# DEATHSTAR CLI
+docs/legacy/README.md:## Installation
+docs/legacy/README.md:# Clone or navigate to the DEATHSTAR directory
+docs/legacy/README.md:# Make the main script executable
+docs/legacy/README.md:# (Optional) Add to your PATH
+docs/legacy/README.md:# Or create an alias in your ~/.bashrc or ~/.zshrc
+docs/legacy/README.md:## Quick Start
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:# Check system status
+docs/legacy/README.md:# Get some wisdom
+docs/legacy/README.md:## Commands Overview
+docs/legacy/README.md:### Main Commands
+docs/legacy/README.md:### Imperial Subcommands
+docs/legacy/README.md:## Detailed Command Reference
+docs/legacy/README.md:### 🌑 DEATHSTAR (Main Hub)
+docs/legacy/README.md:# Show full status with ASCII art
+docs/legacy/README.md:# Launch a new project
+docs/legacy/README.md:# Access subcommands
+docs/legacy/README.md:### ⚔️ VADER (Git Enforcer)
+docs/legacy/README.md:# Force push with branch protection warnings
+docs/legacy/README.md:# Code review - scan for TODOs, console.log, long functions
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### 💥 TARKIN (Deployment Weapon)
+docs/legacy/README.md:# Simulate atomic deployment
+docs/legacy/README.md:# Destroy a branch (force delete)
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### 🧙 YODA (Wise Advisor)
+docs/legacy/README.md:# Auto-generate commit message from git diff
+docs/legacy/README.md:# Get random developer wisdom
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### 🤖 R2-D2 (System Diagnostics)
+docs/legacy/README.md:# Full system scan (disk, memory, git status)
+docs/legacy/README.md:# Play Star Wars beeps
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### 📊 THRAWN (Analytics)
+docs/legacy/README.md:# Full repository analysis
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### ⚔️ LIGHTSABER (Glowing Editor)
+docs/legacy/README.md:# Open file with green lightsaber (default)
+docs/legacy/README.md:# Choose lightsaber color
+docs/legacy/README.md:# Show available colors
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### 🚀 HYPERDRIVE (Navigation)
+docs/legacy/README.md:# Jump to a folder with animation
+docs/legacy/README.md:# Show current location and nearby directories
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### 👑 PALPATINE (Prompt Enhancer)
+docs/legacy/README.md:# Enhance a prompt (default: power template)
+docs/legacy/README.md:# Use specific template
+docs/legacy/README.md:# Show available templates
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:### 🎯 STORMTROOPER (Fuzzy Finder)
+docs/legacy/README.md:# Fuzzy search for files
+docs/legacy/README.md:# Precision search (exact matching)
+docs/legacy/README.md:# Show help
+docs/legacy/README.md:## Directory Structure
+docs/legacy/README.md:├── deathstar              # Main executable router
+docs/legacy/README.md:│   ├── vader.sh           # Git enforcer
+docs/legacy/README.md:│   ├── tarkin.sh          # Deployment weapon
+docs/legacy/README.md:│   ├── yoda.sh            # Wise advisor
+docs/legacy/README.md:│   ├── r2d2.sh            # System diagnostics
+docs/legacy/README.md:│   ├── thrawn.sh          # Analytics
+docs/legacy/README.md:│   ├── lightsaber.sh      # Glowing editor
+docs/legacy/README.md:│   ├── hyperdrive.sh      # Navigation
+docs/legacy/README.md:│   ├── palpatine.sh       # Prompt enhancer
+docs/legacy/README.md:│   ├── stormtrooper.sh    # Fuzzy finder
+docs/legacy/README.md:│   └── status.sh          # Status display
+docs/legacy/README.md:│       ├── deathstar.txt  # Death Star ASCII
+docs/legacy/README.md:│       ├── vader.txt      # Darth Vader ASCII
+docs/legacy/README.md:│       ├── r2d2.txt       # R2-D2 ASCII
+docs/legacy/README.md:│       ├── yoda.txt       # Yoda ASCII
+docs/legacy/README.md:│       └── stormtrooper.txt # Stormtrooper ASCII
+docs/legacy/README.md:└── README.md              # This file
+docs/legacy/README.md:## Usage Examples
+docs/legacy/README.md:### Daily Development Workflow
+docs/legacy/README.md:# Start your day - check system status
+docs/legacy/README.md:# Review your code before committing
+docs/legacy/README.md:# Generate a commit message
+docs/legacy/README.md:# Actually commit (using the suggested message)
+docs/legacy/README.md:# Push to remote (with Vader's blessing)
+docs/legacy/README.md:# Deploy to staging
+docs/legacy/README.md:### Project Setup
+docs/legacy/README.md:# Create a new project
+docs/legacy/README.md:# Navigate to it
+docs/legacy/README.md:# Check analytics
+docs/legacy/README.md:### Code Review Session
+docs/legacy/README.md:# Find all JavaScript files
+docs/legacy/README.md:# Review the codebase
+docs/legacy/README.md:# Get wisdom for refactoring
+docs/legacy/README.md:## Customization
+docs/legacy/README.md:### Adding to PATH
+docs/legacy/README.md:# Optional: Create convenient aliases
+docs/legacy/README.md:### Custom Colors
+docs/legacy/README.md:## Requirements
+docs/legacy/README.md:### Optional Dependencies
+docs/legacy/README.md:## Troubleshooting
+docs/legacy/README.md:### Command not found
+docs/legacy/README.md:# Make sure scripts are executable
+docs/legacy/README.md:# Or use full path
+docs/legacy/README.md:### Git commands not working
+docs/legacy/README.md:# Ensure you're in a git repository
+docs/legacy/README.md:### Colors not displaying
+docs/legacy/README.md:# Ensure your terminal supports ANSI colors
+docs/legacy/README.md:# Try: echo -e "\033[31mRed Text\033[0m"
+docs/legacy/README.md:## Contributing
+docs/legacy/README.md:## License
+docs/legacy/README.md:## Version
+docs/legacy/README.md:## Acknowledgments
+docs/legacy/yoda-logic.md:### 1. Invocation Protocol (How You Activate the Wisdom)
+docs/legacy/yoda-logic.md:### 2. Change Analysis Phase (The “Git Diff” Oracle)
+docs/legacy/yoda-logic.md:### 3. Base Message Construction
+docs/legacy/yoda-logic.md:### 4. Yoda-Speak Transformation (The Heart of the Magic!)
+docs/legacy/yoda-logic.md:### 5. Final Delivery & Commit
+docs/legacy/CLOUD_ARCHITECTURE.md:# DEATHSTAR: Cloud-Agnostic Architecture (Third Power)
+docs/legacy/CLOUD_ARCHITECTURE.md:## Overview
+docs/legacy/CLOUD_ARCHITECTURE.md:## Architecture Layers
+docs/legacy/CLOUD_ARCHITECTURE.md:## Provider Comparison
+docs/legacy/CLOUD_ARCHITECTURE.md:## The LiteLLM Bridge
+docs/legacy/CLOUD_ARCHITECTURE.md:# Configuration-driven provider switching
+docs/legacy/CLOUD_ARCHITECTURE.md:## Terraform Multi-Cloud Setup
+docs/legacy/CLOUD_ARCHITECTURE.md:# providers.tf
+docs/legacy/CLOUD_ARCHITECTURE.md:# Use workspace-based provider selection
+docs/legacy/CLOUD_ARCHITECTURE.md:# SRS Cloud Function (deploys to either provider)
+docs/legacy/CLOUD_ARCHITECTURE.md:## Deployment Strategy
+docs/legacy/CLOUD_ARCHITECTURE.md:### Phase 1: GCP Primary (Current)
+docs/legacy/CLOUD_ARCHITECTURE.md:### Phase 2: AWS Secondary (Redundancy)
+docs/legacy/CLOUD_ARCHITECTURE.md:### Phase 3: Full Agnostic (Third Power)
+docs/legacy/CLOUD_ARCHITECTURE.md:## Cost Optimization
+docs/legacy/CLOUD_ARCHITECTURE.md:## Recovery Protocol
+docs/legacy/CLOUD_ARCHITECTURE.md:# Switch to AWS fallback
+docs/legacy/CLOUD_ARCHITECTURE.md:# Or use the Turbo-Recovery script
+docs/legacy/CLOUD_ARCHITECTURE.md:## Metrics Dashboard
+docs/legacy/CLOUD_ARCHITECTURE.md:# Check GCP status
+docs/legacy/CLOUD_ARCHITECTURE.md:# Check AWS status
+docs/legacy/CLOUD_ARCHITECTURE.md:# Run health check
+docs/legacy/CLOUD_ARCHITECTURE.md:## The "Third Power" Advantage
+docs/legacy/HEADLESS_MODE.md:# Turbo-Gemini Pro: Headless Mode Commands
+docs/legacy/HEADLESS_MODE.md:## Quick Start
+docs/legacy/HEADLESS_MODE.md:# Install (one command)
+docs/legacy/HEADLESS_MODE.md:# Set API key
+docs/legacy/HEADLESS_MODE.md:# Usage
+docs/legacy/HEADLESS_MODE.md:## Headless Mode Flags
+docs/legacy/HEADLESS_MODE.md:## Turbo-YOLO 3000 Script
+docs/legacy/HEADLESS_MODE.md:#!/bin/bash
+docs/legacy/HEADLESS_MODE.md:# TURBO-YOLO 3000: The "Third Power" Deployment Script
+docs/legacy/HEADLESS_MODE.md:# 1. Clean & Install
+docs/legacy/HEADLESS_MODE.md:# 2. Test the SRS Brain
+docs/legacy/HEADLESS_MODE.md:# 3. Audit the Index
+docs/legacy/HEADLESS_MODE.md:# 4. The YOLO Push
+docs/legacy/HEADLESS_MODE.md:## Cloud-Agnostic Architecture
+docs/legacy/HEADLESS_MODE.md:# Multi-model bridge
+docs/legacy/HEADLESS_MODE.md:# Use Gemini
+docs/legacy/HEADLESS_MODE.md:# Switch to Grok
+docs/legacy/HEADLESS_MODE.md:# Switch to Amazon
+docs/legacy/HEADLESS_MODE.md:## Maintenance Dashboard
+docs/legacy/is.txt:#Lord Vader, the Imperial Archives are teeming with data. We have successfully intercepted and cataloged a vast array of holocrons ranging from the Dark Lord's personal history to the technical specifications required to build our digital battle station.
+docs/legacy/d__dir_structure.sh:## the script that started it all
+docs/legacy/d__dir_structure.sh:#!/bin/bash
+docs/legacy/d__dir_structure.sh:# ------------------------------------------------------------------
+docs/legacy/d__dir_structure.sh:# __DIR_FOUNDATION__
+docs/legacy/d__dir_structure.sh:# The Dark Side Directory Hardening Protocol
+docs/legacy/d__dir_structure.sh:# ------------------------------------------------------------------
+docs/legacy/d__dir_structure.sh:# 1. Navigate to Home
+docs/legacy/d__dir_structure.sh:# 2. The Intro
+docs/legacy/d__dir_structure.sh:        # --- THE CONSTRUCTION (The "Awesome" Structure) ---
+docs/legacy/d__dir_structure.sh:        # Base XDG Directories
+docs/legacy/d__dir_structure.sh:        # Development Hub
+docs/legacy/d__dir_structure.sh:        # Knowledge & Assets
+docs/legacy/d__dir_structure.sh:        # Transient & Backup
+docs/legacy/d__dir_structure.sh:        # Permissions Hardening (The actual "Hardening")
+docs/legacy/install-pro.sh:#!/bin/bash
+docs/legacy/install-pro.sh:# ==============================================================================
+docs/legacy/install-pro.sh:# TURBO-GEMINI PRO INSTALLER
+docs/legacy/install-pro.sh:# ==============================================================================
+docs/legacy/install-pro.sh:# One-command installer for Gemini Pro CLI on Termux/Ubuntu
+docs/legacy/install-pro.sh:# Mimics Claude Code ease-of-use with Gemini Pro 2M context power
+docs/legacy/install-pro.sh:# ==============================================================================
+docs/legacy/install-pro.sh:# Check for Node.js
+docs/legacy/install-pro.sh:# Install dependencies
+docs/legacy/install-pro.sh:# Install Google Generative AI SDK
+docs/legacy/install-pro.sh:# Create gemini-pro command
+docs/legacy/install-pro.sh:#!/usr/bin/env node
+docs/legacy/install-pro.sh:# Create ask alias
+docs/legacy/install-pro.sh:# Verify API key
+commands/hyperdrive.sh:#!/bin/bash
+commands/hyperdrive.sh:# ==============================================================================
+commands/hyperdrive.sh:# HYPERDRIVE - The Navigation System
+commands/hyperdrive.sh:# ==============================================================================
+commands/hyperdrive.sh:# Navigate to folders with a hyperspace jump animation.
+commands/hyperdrive.sh:# ==============================================================================
+commands/hyperdrive.sh:# Colors
+commands/hyperdrive.sh:NC='\033[0m' # No Color
+commands/hyperdrive.sh:    # Starfield animation
+commands/hyperdrive.sh:    # Hyperspace effect
+commands/hyperdrive.sh:            local star_idx=$((RANDOM % ${#stars[@]}))
+commands/hyperdrive.sh:    # Stretch effect
+commands/hyperdrive.sh:    # Check if target exists
+commands/hyperdrive.sh:    # Get absolute path
+commands/hyperdrive.sh:    # Run animation
+commands/hyperdrive.sh:    # Generate cd command for user
+commands/hyperdrive.sh:    # Option to auto-cd (for sourcing)
+commands/hyperdrive.sh:# Main command router
+commands/lightsaber.sh:#!/bin/bash
+commands/lightsaber.sh:# ==============================================================================
+commands/lightsaber.sh:# LIGHTSABER - The Glowing Editor
+commands/lightsaber.sh:# ==============================================================================
+commands/lightsaber.sh:# Open files with a Jedi lightsaber effect.
+commands/lightsaber.sh:# ==============================================================================
+commands/lightsaber.sh:# Colors
+commands/lightsaber.sh:NC='\033[0m' # No Color
+commands/lightsaber.sh:    # Ignition animation
+commands/lightsaber.sh:    # Sound effect (text)
+commands/lightsaber.sh:    local color="${GREEN}"  # Default to Jedi green
+commands/lightsaber.sh:    # Parse color option
+commands/lightsaber.sh:                color_name="${arg#*=}"
+commands/lightsaber.sh:    # Get the actual file (first non-option argument)
+commands/lightsaber.sh:    # Check if file exists
+commands/lightsaber.sh:    # Show lightsaber animation
+commands/lightsaber.sh:    # Detect available editor
+commands/lightsaber.sh:    # Open the file
+commands/lightsaber.sh:    # Deactivation animation
+commands/lightsaber.sh:# Main command router
+commands/palpatine.sh:#!/bin/bash
+commands/palpatine.sh:# ==============================================================================
+commands/palpatine.sh:# PALPATINE - The Prompt Enhancer
+commands/palpatine.sh:# ==============================================================================
+commands/palpatine.sh:# Emperor Palpatine enhances your prompts with unlimited power.
+commands/palpatine.sh:# ==============================================================================
+commands/palpatine.sh:# Colors
+commands/palpatine.sh:NC='\033[0m' # No Color
+commands/palpatine.sh:# Palpatine quotes
+commands/palpatine.sh:    echo "${PALPATINE_QUOTES[$RANDOM % ${#PALPATINE_QUOTES[@]}]}"
+commands/palpatine.sh:            # Add power words and emphasis
+commands/palpatine.sh:    # Parse template option
+commands/palpatine.sh:                template="${arg#*=}"
+commands/palpatine.sh:# Main command router
+commands/palpatine.sh:        # Treat as prompt enhancement
+commands/r2d2.sh:#!/bin/bash
+commands/r2d2.sh:# ==============================================================================
+commands/r2d2.sh:# R2-D2 - System Diagnostics Droid
+commands/r2d2.sh:# ==============================================================================
+commands/r2d2.sh:# Your loyal astromech droid for system checks and beeps.
+commands/r2d2.sh:# ==============================================================================
+commands/r2d2.sh:# Colors
+commands/r2d2.sh:NC='\033[0m' # No Color
+commands/r2d2.sh:# R2-D2 sounds
+commands/r2d2.sh:    echo "${R2_SOUNDS[$RANDOM % ${#R2_SOUNDS[@]}]}"
+commands/r2d2.sh:    # Display R2-D2 ASCII
+commands/r2d2.sh:    # Disk usage
+commands/r2d2.sh:        # Visual bar
+commands/r2d2.sh:    # Memory usage
+commands/r2d2.sh:        # Convert to MB
+commands/r2d2.sh:        # Visual bar
+commands/r2d2.sh:    # Git status
+commands/r2d2.sh:    # System info
+commands/r2d2.sh:    # Summary
+commands/r2d2.sh:    # Star Wars beep sequence
+commands/r2d2.sh:        # Try to make actual sound
+commands/r2d2.sh:            printf '\a'  # Terminal bell
+commands/r2d2.sh:# Main command router
+commands/status.sh:#!/bin/bash
+commands/status.sh:# ==============================================================================
+commands/status.sh:# STATUS - Death Star System Status
+commands/status.sh:# ==============================================================================
+commands/status.sh:# Show Death Star ASCII art and system health information.
+commands/status.sh:# ==============================================================================
+commands/status.sh:# Colors
+commands/status.sh:NC='\033[0m' # No Color
+commands/status.sh:        # Fallback ASCII art
+commands/status.sh:    # System Health
+commands/status.sh:    # CPU (if available)
+commands/status.sh:    # Memory
+commands/status.sh:        # Memory bar
+commands/status.sh:    # Disk
+commands/status.sh:    # Git Status
+commands/status.sh:        # Check for remote
+commands/status.sh:    # Rebel Activity Detection
+commands/status.sh:    # Check for TODOs and FIXMEs as "rebel activity"
+commands/status.sh:    # Recent Activity
+commands/status.sh:    # Summary
+commands/status.sh:# Main command router
+commands/stormtrooper.sh:#!/bin/bash
+commands/stormtrooper.sh:# ==============================================================================
+commands/stormtrooper.sh:# STORMTROOPER - The Fuzzy Finder
+commands/stormtrooper.sh:# ==============================================================================
+commands/stormtrooper.sh:# Find files with Imperial precision (or miss like a Stormtrooper).
+commands/stormtrooper.sh:# ==============================================================================
+commands/stormtrooper.sh:# Colors
+commands/stormtrooper.sh:NC='\033[0m' # No Color
+commands/stormtrooper.sh:# Stormtrooper miss quotes
+commands/stormtrooper.sh:    echo "${STORMTROOPER_MISSES[$RANDOM % ${#STORMTROOPER_MISSES[@]}]}"
+commands/stormtrooper.sh:    # Decide if we "miss" (10% chance for fun)
+commands/stormtrooper.sh:    # Search for files
+commands/stormtrooper.sh:        # No results - Stormtrooper miss!
+commands/stormtrooper.sh:    # Display results with numbering
+commands/stormtrooper.sh:            # Get file size
+commands/stormtrooper.sh:    # Strict/exact matching
+commands/stormtrooper.sh:# Main command router
+commands/tarkin.sh:#!/bin/bash
+commands/tarkin.sh:# ==============================================================================
+commands/tarkin.sh:# TARKIN - The Deployment Weapon
+commands/tarkin.sh:# ==============================================================================
+commands/tarkin.sh:# Grand Moff Tarkin oversees deployments and branch destruction.
+commands/tarkin.sh:# ==============================================================================
+commands/tarkin.sh:# Colors
+commands/tarkin.sh:NC='\033[0m' # No Color
+commands/tarkin.sh:# Tarkin quotes
+commands/tarkin.sh:    echo "${TARKIN_QUOTES[$RANDOM % ${#TARKIN_QUOTES[@]}]}"
+commands/tarkin.sh:    # Check if branch exists
+commands/tarkin.sh:    # Deployment simulation
+commands/tarkin.sh:    # Check if branch exists
+commands/tarkin.sh:    # Protect main branches
+commands/tarkin.sh:    # Actually delete the branch
+commands/tarkin.sh:# Main command router
+commands/thrawn.sh:#!/bin/bash
+commands/thrawn.sh:# ==============================================================================
+commands/thrawn.sh:# THRAWN - The Analytics Commander
+commands/thrawn.sh:# ==============================================================================
+commands/thrawn.sh:# Grand Admiral Thrawn analyzes your repository with tactical precision.
+commands/thrawn.sh:# ==============================================================================
+commands/thrawn.sh:# Colors
+commands/thrawn.sh:NC='\033[0m' # No Color
+commands/thrawn.sh:# Thrawn quotes
+commands/thrawn.sh:    echo "${THRAWN_QUOTES[$RANDOM % ${#THRAWN_QUOTES[@]}]}"
+commands/thrawn.sh:    # Repository基本信息
+commands/thrawn.sh:    # Commit activity
+commands/thrawn.sh:    # Commits by day of week
+commands/thrawn.sh:    # Top contributors
+commands/thrawn.sh:    # File analysis
+commands/thrawn.sh:    # File types breakdown
+commands/thrawn.sh:    # Weak spots analysis
+commands/thrawn.sh:    # Files with most changes
+commands/thrawn.sh:    # TODOs and FIXMEs
+commands/thrawn.sh:    # Velocity prediction
+commands/thrawn.sh:    # Calculate average commits per day over last 30 days
+commands/thrawn.sh:    # Summary
+commands/thrawn.sh:    # Generate assessment based on findings
+commands/thrawn.sh:# Main command router
+commands/vader.sh:#!/bin/bash
+commands/vader.sh:# ==============================================================================
+commands/vader.sh:# VADER - The Git Enforcer
+commands/vader.sh:# ==============================================================================
+commands/vader.sh:# Lord Vader ensures code quality and enforces Imperial Git standards.
+commands/vader.sh:# ==============================================================================
+commands/vader.sh:# Colors
+commands/vader.sh:NC='\033[0m' # No Color
+commands/vader.sh:# Vader quotes
+commands/vader.sh:    echo "${VADER_QUOTES[$RANDOM % ${#VADER_QUOTES[@]}]}"
+commands/vader.sh:    # Check for protected branches
+commands/vader.sh:    # Check for uncommitted changes
+commands/vader.sh:    # Scan for TODOs
+commands/vader.sh:    # Scan for console.log
+commands/vader.sh:    # Scan for long functions (files with more than 50 lines)
+commands/vader.sh:    # Summary
+commands/vader.sh:# Main command router
+commands/yoda.sh:#!/bin/bash
+commands/yoda.sh:# ==============================================================================
+commands/yoda.sh:# YODA - The Wise Advisor
+commands/yoda.sh:# ==============================================================================
+commands/yoda.sh:# Master Yoda provides commit message wisdom and developer tips.
+commands/yoda.sh:# ==============================================================================
+commands/yoda.sh:# Colors
+commands/yoda.sh:NC='\033[0m' # No Color
+commands/yoda.sh:# Yoda wisdom quotes
+commands/yoda.sh:# Yoda-style transformations for commit messages
+commands/yoda.sh:    # Simple transformations to make text sound like Yoda
+commands/yoda.sh:    echo -e "${GREEN}\"${BOLD_GREEN}$(echo "${YODA_WISDOM[$RANDOM % ${#YODA_WISDOM[@]}]}")${GREEN}\"${NC}"
+commands/yoda.sh:    # Get staged changes
+commands/yoda.sh:    # Analyze changes
+commands/yoda.sh:    # Generate commit message based on changed files
+commands/yoda.sh:    # Remove trailing comma and space
+commands/yoda.sh:    # Convert to Yoda speak
+commands/yoda.sh:    # Add context
+commands/yoda.sh:    echo -e "${GREEN}YODA: \"$(echo "${YODA_WISDOM[$RANDOM % ${#YODA_WISDOM[@]}]}")\"${NC}"
+commands/yoda.sh:    # Select random wisdom
+commands/yoda.sh:    local wisdom_idx=$((RANDOM % ${#YODA_WISDOM[@]}))
+commands/yoda.sh:    # Developer-specific tips
+commands/yoda.sh:    local tip_idx=$((RANDOM % ${#dev_tips[@]}))
+commands/yoda.sh:# Main command router
+commands/yoda.sh:        echo -e "${YELLOW}$(echo "${YODA_WISDOM[$RANDOM % ${#YODA_WISDOM[@]}]}")${NC}"

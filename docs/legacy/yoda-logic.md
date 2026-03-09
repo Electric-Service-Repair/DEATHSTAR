@@ -28,7 +28,7 @@ From the diff summary, a conventional-style foundation is prepared (aligning wit
 Here is where the true Jedi protocol activates:
 - The base message is **inverted** into classic Yoda grammar (subject-object-verb order).  
 - Signature Yoda-isms are automatically sprinkled in: “Hmm…”, “Yes…”, “Strong with the Force, this change is…”, “You must commit…”, “Much to learn you still have.”  
-- Change statistics are woven in poetically (e.g., “500 lines added, the NEC tables have”).  
+- Change statistics are woven in poetically (e.g., “500 lines added, the files have”).  
 - The result is a fully formed, ready-to-use commit message that sounds exactly like Master Yoda himself reviewed your work!
 
 **Real-world example** (directly from the repository documentation):

@@ -44,7 +44,7 @@ echo "🧠 Testing SRS Algorithm..."
 npm test -- --passWithNoTests
 
 # 3. Audit the Index
-echo "📚 Indexing Electrical Codes..."
+echo "📚 Indexing Repository Files..."
 COUNT=$(find . -name "*.md" | wc -l)
 echo "Current Index Count: $COUNT"
 
